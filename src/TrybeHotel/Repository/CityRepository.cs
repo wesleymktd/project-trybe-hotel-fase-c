@@ -38,7 +38,7 @@ namespace TrybeHotel.Repository
 
             _context.Cities.Add(cityAdd);
             _context.SaveChanges();
-
+            
             var cityAddDto = new CityDto
             {
                 cityId = cityAdd.CityId,

@@ -238,18 +238,60 @@
           }
         },
         {
-          "ruleId": "CS1998",
+          "ruleId": "CS8604",
           "level": "warning",
-          "message": "Este método assíncrono não possui operadores 'await' e será executado de modo síncrono. É recomendável o uso do operador 'await' para aguardar chamadas à API desbloqueadas ou do operador 'await Task.Run(...)' para realizar um trabalho associado à CPU em um thread em segundo plano.",
+          "message": "Possível argumento de referência nula para o parâmetro 'userEmail' em 'UserDto IUserRepository.GetUserByEmail(string userEmail)'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Services/GeoService.cs",
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Controllers/UserController.cs",
                 "region": {
-                  "startLine": 16,
-                  "startColumn": 35,
-                  "endLine": 16,
-                  "endColumn": 47
+                  "startLine": 30,
+                  "startColumn": 57,
+                  "endLine": 30,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8604",
+          "level": "warning",
+          "message": "Possível argumento de referência nula para o parâmetro 'email' em 'BookingResponse IBookingRepository.Add(BookingDtoInsert booking, string email)'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Controllers/BookingController.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 66,
+                  "endLine": 28,
+                  "endColumn": 71
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8604",
+          "level": "warning",
+          "message": "Possível argumento de referência nula para o parâmetro 'email' em 'BookingResponse IBookingRepository.GetBooking(int bookingId, string email)'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Controllers/BookingController.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 69,
+                  "endLine": 44,
+                  "endColumn": 74
                 }
               }
             }
@@ -309,6 +351,27 @@
               "resultFile": {
                 "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Services/GeoService.cs",
                 "region": {
+                  "startLine": 16,
+                  "startColumn": 35,
+                  "endLine": 16,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Este método assíncrono não possui operadores 'await' e será executado de modo síncrono. É recomendável o uso do operador 'await' para aguardar chamadas à API desbloqueadas ou do operador 'await Task.Run(...)' para realizar um trabalho associado à CPU em um thread em segundo plano.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Services/GeoService.cs",
+                "region": {
                   "startLine": 22,
                   "startColumn": 43,
                   "endLine": 22,
@@ -343,48 +406,6 @@
           }
         },
         {
-          "ruleId": "CS8604",
-          "level": "warning",
-          "message": "Possível argumento de referência nula para o parâmetro 'userEmail' em 'UserDto IUserRepository.GetUserByEmail(string userEmail)'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Controllers/UserController.cs",
-                "region": {
-                  "startLine": 30,
-                  "startColumn": 57,
-                  "endLine": 30,
-                  "endColumn": 67
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8604",
-          "level": "warning",
-          "message": "Possível argumento de referência nula para o parâmetro 'email' em 'BookingResponse IBookingRepository.Add(BookingDtoInsert booking, string email)'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Controllers/BookingController.cs",
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 66,
-                  "endLine": 28,
-                  "endColumn": 71
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CS8603",
           "level": "warning",
           "message": "Possível retorno de referência nula.",
@@ -406,39 +427,18 @@
           }
         },
         {
-          "ruleId": "CS8602",
+          "ruleId": "CS8603",
           "level": "warning",
-          "message": "Desreferência de uma referência possivelmente nula.",
+          "message": "Possível retorno de referência nula.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/HotelRepository.cs",
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/UserRepository.cs",
                 "region": {
-                  "startLine": 24,
-                  "startColumn": 32,
-                  "endLine": 24,
-                  "endColumn": 42
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8604",
-          "level": "warning",
-          "message": "Possível argumento de referência nula para o parâmetro 'email' em 'BookingResponse IBookingRepository.GetBooking(int bookingId, string email)'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Controllers/BookingController.cs",
-                "region": {
-                  "startLine": 44,
-                  "startColumn": 69,
-                  "endLine": 44,
-                  "endColumn": 74
+                  "startLine": 67,
+                  "startColumn": 24,
+                  "endLine": 67,
+                  "endColumn": 28
                 }
               }
             }
@@ -481,6 +481,300 @@
                   "startColumn": 36,
                   "endLine": 32,
                   "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8601",
+          "level": "warning",
+          "message": "Possível atribuição de referência nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/RoomRepository.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 36,
+                  "endLine": 32,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8601",
+          "level": "warning",
+          "message": "Possível atribuição de referência nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/RoomRepository.cs",
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 36,
+                  "endLine": 66,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Desreferência de uma referência possivelmente nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/HotelRepository.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 32,
+                  "endLine": 24,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8601",
+          "level": "warning",
+          "message": "Possível atribuição de referência nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/HotelRepository.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 32,
+                  "endLine": 24,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8601",
+          "level": "warning",
+          "message": "Possível atribuição de referência nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/HotelRepository.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 29,
+                  "endLine": 25,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8601",
+          "level": "warning",
+          "message": "Possível atribuição de referência nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/HotelRepository.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 28,
+                  "endLine": 52,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8601",
+          "level": "warning",
+          "message": "Possível atribuição de referência nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/HotelRepository.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 25,
+                  "endLine": 53,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8601",
+          "level": "warning",
+          "message": "Possível atribuição de referência nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/CityRepository.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 28,
+                  "endLine": 22,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8601",
+          "level": "warning",
+          "message": "Possível atribuição de referência nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/CityRepository.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 29,
+                  "endLine": 23,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8601",
+          "level": "warning",
+          "message": "Possível atribuição de referência nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/CityRepository.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 24,
+                  "endLine": 45,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8601",
+          "level": "warning",
+          "message": "Possível atribuição de referência nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/CityRepository.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 25,
+                  "endLine": 46,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Desreferência de uma referência possivelmente nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/CityRepository.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 11,
+                  "endLine": 57,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8601",
+          "level": "warning",
+          "message": "Possível atribuição de referência nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/CityRepository.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 20,
+                  "endLine": 65,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8601",
+          "level": "warning",
+          "message": "Possível atribuição de referência nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/CityRepository.cs",
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 21,
+                  "endLine": 66,
+                  "endColumn": 37
                 }
               }
             }
@@ -616,39 +910,18 @@
           }
         },
         {
-          "ruleId": "CS8602",
+          "ruleId": "CS8601",
           "level": "warning",
-          "message": "Desreferência de uma referência possivelmente nula.",
+          "message": "Possível atribuição de referência nula.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/CityRepository.cs",
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/BookingRepository.cs",
                 "region": {
                   "startLine": 57,
-                  "startColumn": 11,
+                  "startColumn": 36,
                   "endLine": 57,
-                  "endColumn": 21
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8603",
-          "level": "warning",
-          "message": "Possível retorno de referência nula.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/UserRepository.cs",
-                "region": {
-                  "startLine": 67,
-                  "startColumn": 24,
-                  "endLine": 67,
-                  "endColumn": 28
+                  "endColumn": 56
                 }
               }
             }
@@ -742,6 +1015,27 @@
           }
         },
         {
+          "ruleId": "CS8601",
+          "level": "warning",
+          "message": "Possível atribuição de referência nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/BookingRepository.cs",
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 40,
+                  "endLine": 91,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CS8603",
           "level": "warning",
           "message": "Possível retorno de referência nula.",
@@ -792,9 +1086,9 @@
               "resultFile": {
                 "uri": "file:///home/wesley/projetos/C%23/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Program.cs",
                 "region": {
-                  "startLine": 109,
+                  "startLine": 110,
                   "startColumn": 22,
-                  "endLine": 109,
+                  "endLine": 110,
                   "endColumn": 29
                 }
               }
@@ -891,6 +1185,20 @@
           "shortDescription": "Não é possível criar uma instância do analisador",
           "defaultLevel": "warning",
           "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8032)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8601": {
+          "id": "CS8601",
+          "shortDescription": "Possível atribuição de referência nula.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8601)",
           "properties": {
             "category": "Compiler",
             "isEnabledByDefault": true,
