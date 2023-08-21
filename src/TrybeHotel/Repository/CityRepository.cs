@@ -20,6 +20,7 @@ namespace TrybeHotel.Repository
                 {
                     cityId = city.CityId,
                     name = city.Name,
+                    state = city.State
                 }
             );
 
@@ -31,7 +32,8 @@ namespace TrybeHotel.Repository
         {
             var cityAdd = new City
             {
-                Name = city.Name
+                Name = city.Name,
+                State = city.State
             };
 
             _context.Cities.Add(cityAdd);
@@ -40,7 +42,8 @@ namespace TrybeHotel.Repository
             var cityAddDto = new CityDto
             {
                 cityId = cityAdd.CityId,
-                name = cityAdd.Name
+                name = cityAdd.Name,
+                state = cityAdd.State
             };
 
             return cityAddDto;
