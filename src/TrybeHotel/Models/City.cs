@@ -9,6 +9,7 @@ namespace TrybeHotel.Models
         [Key]
         public int CityId { get; set; }
         public string Name { get; set; } = "";
+        public string State { get; set; } = "";
         [InverseProperty("City")]
         public ICollection<Hotel>? Hotels { get; set; }
 
