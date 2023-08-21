@@ -30,7 +30,7 @@ namespace TrybeHotel.Repository
                         address = room.Hotel.Address,
                         cityId = room.Hotel.CityId,
                         cityName = room.Hotel.City.Name,
-                        
+                        state = room.Hotel.City.State
                     }
                 }
             );
@@ -64,6 +64,7 @@ namespace TrybeHotel.Repository
                         address = h.Address,
                         cityId = c.CityId,
                         cityName = c.Name,
+                        state = c.State
                     }
                 }
             ).First();
